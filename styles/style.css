@@ -354,8 +354,7 @@ padding: 0;
  color: #2F80ED;
  list-style: none;
  text-decoration: none;
-align-self: flex-start;
-min-width: 180px;    
+ min-width: 180px;    
 }
 
  .feynman {
