@@ -1,3 +1,16 @@
+@keyframes rotation {
+    from {
+      transform: rotate(-15deg);
+    }
+    to {
+      transform: rotate(345deg);
+    }
+  }
+@import url(./__description/cards__description.css);
+@import url(./__image/cards__image.css);
+@import url(./__item/cards__item.css);
+@import url(./__title/cards__title.css);
+ 
  .page {
      min-width: 1100px;
      /* we don't know how to make mobile versions of websites yet, */
@@ -19,6 +32,7 @@
      justify-content: center;
      background-color: #f2f2f2;
      margin-bottom: 100px;
+     overflow: hidden;
      /* parameters for the header section */
  }
  
@@ -74,6 +88,13 @@
      right: 0;
      z-index: 0;
      top: 64px;
+     transform: rotate(-15deg);
+     overflow: hidden;
+ }
+
+ .rotation{
+     animation: rotation 20s linear infinite;
+     
  }
  /* including elements with key-value modifiers */
  
@@ -125,6 +146,82 @@
  
  .two-columns__span-accent {
      font-weight: bold;
+ }
+
+ .techniques{
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 1120px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+ }
+
+ .cards{
+ margin: 60px 0 0;
+ padding: 0;
+ max-width: 100%;
+ width: 920px;
+ display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+grid-template-rows: auto;
+gap: 60px 100px;  
+ }
+
+ .cards__item{
+    list-style: none;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    
+ }
+
+ .cards__image{
+max-width: 160px;
+height: 160px;
+margin-bottom: 43px;
+border-radius: 50%;
+ }
+
+
+ .cards__title{
+line-height: 1.15;
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 16px;
+ }
+
+ .cards__description{
+line-height: 23px;
+font-size: 18px;
+font-weight: normal;
+margin-bottom: 60px;
+ }
+
+ .video__iframes{
+margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
+list-style: none;
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+margin-bottom: -4rem;
+
+ }
+
+ .video__iframe{
+align-content: center;
+justify-content: center;
+padding: 10px;
+ }
+ 
+ .oakley{
+    background-color: #f2f2f2;
+    padding-top: 160px;
  }
  
  .digits {
@@ -178,7 +275,89 @@
      font-size: 18px;
      font-weight: normal;
  }
- 
+
+ .khan{
+  
+    justify-content: center;
+    
+    display: flex;
+    padding-top: 105px;
+    background-color: #f2f2f2;
+    
+ }
+
+.khan__container{
+    background-color: #f2f2f2;
+    width: 80%;
+   overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.khan__author{
+line-height: 42px;
+font-size: 30px;
+font-weight: normal;
+margin: 0;
+padding: 0;
+}
+
+.khan__title{
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;
+    margin:0;
+}
+
+.khan__quote{
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    width: 790px;
+    margin-bottom: 36px;
+}
+
+.khan__quote-author{
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.khan__quote-author-subline{
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 0 60px;
+}
+
+.khan__book-container{
+  max-width: 620px;
+  max-height: 608px;
+    display: flex;
+    
+
+}
+
+.khan__book-pic{
+    object-position: left top;
+    width: 100%;
+    object-fit: cover;
+    margin-right: 40px;
+}
+
+.khan__buy-link{
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: normal;
+    color: #2F80ED;
+    list-style: none;
+    text-decoration: none;
+    align-self: flex-start; 
+    min-width: 180px;    
+}
+
  .feynman {
      background-image: url(../images/feynman.png);
      background-repeat: no-repeat;
@@ -287,6 +466,27 @@
      height: 636px;
      top: 0;
  }
+.resources{
+    margin-top: 100px;
+    margin-bottom: 217px;
+    flex-direction: row;
+  
+}
+ .resources__logo{
+width: 270px;
+height: 38px;
+ }
+
+ .resources__logo-zone{
+    
+     
+     margin-top: 80px;
+     align-items: center;
+     justify-content: center;
+     display:flex;
+     text-decoration-style: none;
+     list-style-type:none;
+ }
  
  .footer {
      min-height: 350px;
@@ -372,4 +572,4 @@
      width: 16px;
      height: 16px;
      margin-right: 10px;
- }
+     }
