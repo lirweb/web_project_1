@@ -1,0 +1,5 @@
+.footer_column_content_about {
+    flex-direction: column;
+    display: flex;
+    order: 2;
+}
