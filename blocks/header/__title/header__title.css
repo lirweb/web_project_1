@@ -5,4 +5,8 @@
     font-weight: bold;
     margin: 0 0 0 64px;
     z-index: 2;
+    align-self: center;
+    grid-column: 1;
+    grid-row: 2 / 3;
+    
 }

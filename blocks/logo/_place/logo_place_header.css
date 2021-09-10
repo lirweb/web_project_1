@@ -4,4 +4,7 @@
     position: absolute;
     top: 30px;
     left: 64px;
+    grid-column: 1 / 2;
+    grid-row: 1 /2;
+    max-width: 100%;
 }
