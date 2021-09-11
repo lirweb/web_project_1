@@ -3,4 +3,6 @@
     width: 100%;
     object-fit: cover;
     margin-right: 40px;
+    max-width: 620px;
+    max-height: 608px;
 }

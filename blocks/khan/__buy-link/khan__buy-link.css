@@ -7,3 +7,9 @@
     text-decoration: none;
     min-width: 180px;    
    }
+
+   .khan__buy-link:hover {
+    cursor: pointer;
+    opacity: 50%;
+    transition: opacity 0.5s linear 0s;
+   }

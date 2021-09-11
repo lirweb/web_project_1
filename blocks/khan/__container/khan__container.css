@@ -2,7 +2,6 @@
 .khan__container{
     background-color: #f2f2f2;
     width: 80%;
-   overflow: hidden;
     display: flex;
     flex-direction: column; 
 }
