@@ -1,9 +1,13 @@
 
 
    .video__iframe {
+    
+      border: 0;
       width: 515px;
       height: 316px;
-      padding-right: 20px;
-      margin-bottom: -40px;
-      border: none;
+      margin: 0 20px 0 0;
   }
+
+  .video__iframe:last-of-type {
+   margin: 0;
+}
